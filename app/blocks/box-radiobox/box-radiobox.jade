@@ -1,0 +1,19 @@
+mixin box-radiobox()
+	+b('ul').box-radiobox&attributes(attributes)
+		block
+
+		+e('li').li._layout-width
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_1', 'name': 'input-radio', 'value': '1', 'checked': 'checked'})
+			+e('label').label&attributes({'for': 'input-radio_1'}) Верстать
+
+		+e('li').li._pump-width
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_2', 'name': 'input-radio', 'value': '2'})
+			+e('label').label._pump-pudding_left&attributes({'for': 'input-radio_2'}) Прокачиваться в JS
+
+		+e('li').li._manager-width
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_3', 'name': 'input-radio', 'value': '3'})
+			+e('label').label._manager-pudding_left&attributes({'for': 'input-radio_3'}) Менеджерство
+
+		+e('li').li._often-width
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_4', 'name': 'input-radio', 'value': '4'})
+			+e('label').label._often-padding_left&attributes({'for': 'input-radio_4'}) Другое

@@ -1,0 +1,67 @@
+.box-radiobox
+	position relative
+	margin-top 13px
+	margin-left -6px
+
+	&__li
+		display inline-block
+		vertical-align top
+		
+		&_layout-width
+			width 127px
+
+		&_pump-width
+			width 221px
+
+		&_manager-width
+			width 180px
+
+
+	&__label
+		font 20px font-PTSansBold, sans-serif
+		cursor pointer
+		color color-black
+
+	&__input
+		position relative
+		opacity 0
+
+		&:not(checked) 
+			position absolute
+			opacity 0
+
+		&:checked + .box-radiobox__label::after 
+			opacity 1
+
+.box-radiobox__label
+	position relative
+	padding-left 36px
+
+	&_pump-pudding_left
+		padding-left 34px
+
+	&_manager-pudding_left
+		padding-left 35px
+
+	&_often-padding_left
+		position relative
+		top -1px
+		padding-left 34px
+
+	&::before 
+		position absolute
+		top 0
+		left 0
+		size 30px
+		content ''
+		background url('/assets/images/input-radio.png') -5px -9px no-repeat
+
+	&::after
+		position absolute
+		top 0
+		left 0
+		size 30px
+		content ''
+		background url('/assets/images/cheked.png') 4px 4px no-repeat
+		opacity 0
+		transition all .2s

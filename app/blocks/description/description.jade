@@ -1,0 +1,5 @@
+mixin description(desc)
+	+b.description&attributes(attributes)
+		block
+		each val in desc
+			+e('p').__p #{ val }

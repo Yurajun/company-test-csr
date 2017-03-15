@@ -1,0 +1,10 @@
+include ../logotip/logotip
+
+mixin header()
+	+b.header&attributes(attributes)
+		block
+
+		+logotip
+
+		+e('img').img-case&attributes({'src': '/assets/images/delo.png', 'alt': 'delo', 'title': 'delo'})
+		+e('img').img-secret&attributes({'src': '/assets/images/secret.png', 'alt': 'secret', 'title': 'secret'})

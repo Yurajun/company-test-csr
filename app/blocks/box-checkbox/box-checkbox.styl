@@ -1,0 +1,97 @@
+.box-checkbox
+	position relative
+	left -3px
+	margin-top 25px
+	margin-bottom 43px
+	display flex
+	height 250px
+	flex-flow column wrap
+
+	&__li
+		margin-bottom 9px
+		size 259px 26px
+
+		&_width
+			width 269px
+
+	&__label
+		display block
+		font 21px font-PTSansBold, sans-serif
+		cursor pointer
+		color color-black
+
+		&_word-spacing
+			word-spacing -1px
+
+	&__input
+		position absolute
+		display block
+		opacity 0
+
+
+		&:not(checked) 
+			position absolute
+			opacity 0
+
+		&:checked + .box-checkbox__label::after 
+			opacity 1
+
+	&__a
+		color color-blue
+
+	&__span-eyes
+		position relative
+		top 1px
+		left -1px
+
+	&__span-letter
+		position relative
+		top -1px
+		left 1px
+
+		&_position-top
+			top 1px
+
+		&_indent-top
+			top 2px
+
+		&_position-top-3
+			top 3px
+
+		&_position-top-4
+			top 4px
+
+		&_word-spacing
+			word-spacing -1px
+
+		&_indent-left
+			left 0
+
+.box-checkbox__label
+	position relative
+	padding-left 28px
+
+	&_padding-left
+		padding-left 24px
+
+	&_line-height
+		line-height 26px
+
+	&::before 
+		position absolute
+		top 6px
+		left 0
+		size 19px 18px
+		content ''
+		background url('/assets/images/check.png') top left no-repeat
+
+	&::after
+		position absolute
+		top 9px
+		left 4px
+		size 12px
+		content ''
+		background color-brown
+		opacity 0
+		transition all .2s
+

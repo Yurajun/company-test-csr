@@ -1,0 +1,68 @@
+.graph-javascript
+	margin-top 33px
+	margin-bottom 25px
+
+	&__wrappbox-triangle
+		position relative
+		z-index 100
+		left -9px
+		size 782px 0
+
+	&__graph
+		position relative
+		z-index 1
+		top -20px
+		left -7px
+		size 774px 60px
+		retinaBackground('graph')
+
+	&__footnotes
+		position relative
+		left -2px
+		margin-top -21px
+		display flex
+
+	&__span-footnote
+		position relative
+		display inline-block
+		font 13px font-PTSansBold, sana-serif
+		line-height 1.5
+		color color-brown
+
+		&_style-not
+			top -2px
+			width 145px
+
+		&_style-solve
+			top -4px
+			width 227px
+
+		&_style-remodel
+			top -4px
+			width 259px
+
+		&_style-js
+			top 3px
+			left 0
+			width 140px
+
+.rangeslider--horizontal
+	height 0
+
+.rangeslider__handle
+	size 17px 14px
+	background-color transparent
+	retinaBackground(triangle)
+	border none
+	border-radius 0
+	box-shadow none
+
+.rangeslider__handle:after
+	size 17px 14px
+	retinaBackground(triangle)
+	border-radius 0
+
+.rangeslider__handle:active, 
+.rangeslider--active .rangeslider__handle
+	background-image none
+	background-size 0

@@ -1,0 +1,88 @@
+mixin box-checkbox()
+	+b('ul').box-checkbox&attributes(attributes)
+		block
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-bem', 'checked': 'checked'})
+			+e('label').label&attributes({'for': 'input-bem'}) БЭМ/OOCSS
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-pug', 'checked': 'checked'})
+			+e('label').label&attributes({'for': 'input-pug'}) Pug (Jade)
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-styl', 'checked': 'checked'})
+			+e('label').label&attributes({'for': 'input-styl'}) Stylus/LESS/SASS
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-svg'})
+			+e('label').label&attributes({'for': 'input-svg'}) Работаю с SVG
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-impose', 'checked':'checked'})
+			+e('label').label&attributes({'for': 'input-impose'}) Верстаю семантично
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-ay'})
+			+e('label').label._word-spacing&attributes({'for': 'input-ay'}) Accessibility (A11Y)
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-es', 'checked': 'checked'})
+			+e('label').label&attributes({'for': 'input-es'}) ES2015/ES2016
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-gulp'})
+			+e('label').label._padding-left&attributes({'for': 'input-gulp'}) Gulp/GRUNT
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-webpack'})
+			+e('label').label._padding-left&attributes({'for': 'input-webpack'}) Webpack
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-webgl'})
+			+e('label').label._padding-left._word-spacing&attributes({'for': 'input-webgl'}) Дружу с WebGL
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-jquery', 'checked':'checked'})
+			+e('label').label._padding-left&attributes({'for': 'input-jquery'}) jQuery
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-angular'})
+			+e('label').label._padding-left._word-spacing&attributes({'for': 'input-angular'}) Знаю/изучаю Angular
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-react'})
+			+e('label').label._padding-left&attributes({'for': 'input-react'}) Знаю/изучаю React
+
+		+e('li').li._width
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-node'})
+			+e('label').label._padding-left&attributes({'for': 'input-node'}) Знаю/изучаю Node.js
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-git'})
+			+e('label').label._padding-left&attributes({'for': 'input-git'}) Использую Git
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-eyes', 'checked': 'checked'})
+			+e('label').label._padding-left&attributes({'for': 'input-eyes'}) 
+				+e('span').span-eyes
+					+e('span').span-letter С 
+					| глазомером 
+					+e('span').span-letter_position-top всё 
+					+e('span').span-letter_indent-top ок
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-blog', 'checked': 'checked'})
+			+e('label').label._padding-left&attributes({'for': 'input-blog'})
+				+e('span').span-letter_position-top-3._indent-left Читаю 
+					+e('a').a&attributes({'href': '#', 'title': 'click me'}) blog.csssr.ru
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-i'})
+			+e('label').label._padding-left&attributes({'for': 'input-i'})
+				+e('span').span-letter_position-top-3 Я ленивый(-ая)
+
+		+e('li').li
+			+e('input').input&attributes({'type': 'checkbox', 'id': 'input-english'})
+			+e('label').label._padding-left._line-height&attributes({'for': 'input-english'}) 
+				+e('span').span-letter_position-top-4._word-spacing У меня хороший английский

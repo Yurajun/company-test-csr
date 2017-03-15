@@ -1,0 +1,23 @@
+mixin address()
+	+b('ul').address&attributes(attributes)
+		block
+
+		+e('li').name-li._name_indent-bottom._name_width
+			+e('label').name-label&attributes({'for': 'address-name'}) Полное ФИО
+			+e('input').name-input&attributes({'type': 'text', 'id': 'address-name', 'name': 'js-address-name','placeholder': 'Комаров Юрий Николаевич'})
+
+		+e('li').year-li._year_indent-bottom._year_width
+			+e('label').year-label&attributes({'for': 'address-year'}) Год рождения
+			+e('input').year-input&attributes({'type': 'text', 'id': 'address-year', 'name': 'js-address-year','placeholder': '1985'})
+
+		+e('li').city-li._city_indent-bottom._city_width
+			+e('label').city-label&attributes({'for': 'address-city'}) Место жительства
+			+e('input').city-input&attributes({'type': 'text', 'id': 'address-city', 'name': 'js-address-city','placeholder': 'г. Владимир, Россия'})
+
+		+e('li').skype-li._skype_indent-bottom._skype_width
+			+e('label').skype-label&attributes({'for': 'address-skype'}) Скайп 
+			+e('input').skype-input&attributes({'type': 'text', 'id': 'address-skype', 'name': 'js-address-skype','placeholder': 'yurajun@mail.ru'})
+
+		+e('li').mail-li._mail_width
+			+e('label').mail-label&attributes({'for': 'address-mail'}) Почта 
+			+e('input').mail-input&attributes({'type': 'text', 'id': 'address-mail', 'name': 'js-address-mail','placeholder': 'yurajun@mail.ru'})

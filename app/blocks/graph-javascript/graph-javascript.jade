@@ -1,0 +1,14 @@
+mixin graph-javascript()
+	+b.graph-javascript&attributes(attributes)
+		block
+
+		+e.wrappbox-triangle
+			+e('input').input-range&attributes({'type': 'range', 'min': '0', 'max': '1000', 'step': '1', 'value': '450'})
+
+		+e.graph
+
+		+e.footnotes
+			+e('span').span-footnote._style-not Не владею
+			+e('span').span-footnote._style-solve Использую готовые решения
+			+e('span').span-footnote._style-remodel Использую готовые решения <br /> и умею их переделывать
+			+e('span').span-footnote._style-js Пишу сложный JS с нуля

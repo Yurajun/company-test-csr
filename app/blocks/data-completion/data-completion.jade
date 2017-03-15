@@ -1,0 +1,6 @@
+mixin data-completion()
+	+b.data-completion&attributes(attributes)
+		block
+
+		+e('label').label&attributes({'for': 'label-completion'}) Дата заполенения
+		+e('input').input&attributes({'type': 'text', 'id': 'label-completion', 'placeholder': '10.03.2017'})

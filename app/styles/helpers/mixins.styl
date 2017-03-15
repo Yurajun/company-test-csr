@@ -42,3 +42,25 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+
+// Set color placeholder all browsers
+inputPlaceholder-color($color)
+	&::-webkit-input-placeholder
+			color $color
+	&:-ms-input-placeholder
+		color $color
+	&::-ms-input-placeholder
+		color $color
+	&:placeholder
+		color $color
+
+// Set font-face all browsers
+font-fase(fontFamily, folder, fontName)
+	@font-face
+		font-family fontFamily
+		src url('/assets/fonts/' + folder +'/' + fontName + '.eot') /* IE9 Compat Modes */
+		src url('/assets/fonts/' + folder +'/' + fontName + '?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+				url('/assets/fonts/' + folder +'/' + fontName + '.woff2' ) format('woff2'), /* Super Modern Browsers */
+				url('/assets/fonts/' + folder +'/' + fontName + '.woff') format('woff'), /* Pretty Modern Browsers */
+				url('/assets/fonts/' + folder +'/' + fontName + '.ttf') format('truetype'), /* Safari, Android, iOS */
+				url('/assets/fonts/' + folder +'/' + fontName + '.svg#svgFontName') format('svg') /* Legacy iOS */
