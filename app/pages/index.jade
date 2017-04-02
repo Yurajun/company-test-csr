@@ -8,6 +8,7 @@ include /blocks/graph-javascript/graph-javascript
 include /blocks/description/description
 include /blocks/box-radiobox/box-radiobox
 include /blocks/data-completion/data-completion
+include /blocks/scripts/scripts
 
 extends /blocks/layout-default/layout-default
 
@@ -41,7 +42,7 @@ block content
 		+subtitle._align-words
 			| Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
 
-		+description(getData('description'))
+		+description()
 
 		+title._word-spacing_future._margin-bottom_future
 			| Какие у вас планы на будущее?
@@ -51,3 +52,4 @@ block content
 		+box-radiobox
 
 		+data-completion
+

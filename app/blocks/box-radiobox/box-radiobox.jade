@@ -3,11 +3,11 @@ mixin box-radiobox()
 		block
 
 		+e('li').li._layout-width
-			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_1', 'name': 'input-radio', 'value': '1', 'checked': 'checked'})
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_1', 'name': 'input-radio', 'value': '1'})
 			+e('label').label&attributes({'for': 'input-radio_1'}) Верстать
 
 		+e('li').li._pump-width
-			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_2', 'name': 'input-radio', 'value': '2'})
+			+e('input').input&attributes({'type': 'radio', 'id': 'input-radio_2', 'name': 'input-radio', 'value': '2', 'checked': 'checked'})
 			+e('label').label._pump-pudding_left&attributes({'for': 'input-radio_2'}) Прокачиваться в JS
 
 		+e('li').li._manager-width

@@ -1,37 +1,7 @@
-/* global jQuery */
-(function description($){
-	const divResult = document.querySelector('.description');
+import MediumEditor from 'medium-editor';
 
-	function printP(str, clsName) {
-		const p = document.createElement('p');
-		p.classList.add(clsName);
-		p.appendChild(document.createTextNode(str));
-		divResult.appendChild(p);
-	}
+const desc = document.querySelector('.description__box');
 
-	function wrapText(text, lineHeight, clName){
-		const words = text.split(' ');
-		const countWords = words.length;
-		let line = '';
-		let n = 0;
-		for (n; n < countWords; n++){
-			const testLine = line + words[n] + ' ';
-			const testWidth = testLine.length;
-			if (testWidth > lineHeight){
-				printP(line, clName);
-				line = words[n] + ' ';
-			}else {
-				line = testLine;
-			}
-		}
-		printP(line, clName);
-	}
-
-	const p = $('.description__p');
-	divResult.innerHTML = '';
-
-	p.map(function (i, o){
-		wrapText($(o).text(), 43, $(o).attr('class'));
-	});
-
-})(jQuery);
+const description = new MediumEditor(desc, {    // eslint-disable-line no-unused-vars
+	toolbar: false
+});

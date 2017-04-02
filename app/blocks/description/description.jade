@@ -1,5 +1,9 @@
-mixin description(desc)
+mixin description()
 	+b.description&attributes(attributes)
 		block
-		each val in desc
-			+e('p').__p #{ val }
+		+e('div').__box
+			+e('p').__p Я не знаю что писать, просто, вот результат работы, наверняка опять где-нибудь куча недочетов )))
+			+e('p').__p Я попытался подключить script http://yabwe.github.io/medium-editor/ но не знаю как получить объект new MediumEditor из api.min.js. Поэтому я прикрутил script с этим плагином в конце страницы, думается что так делать не надо.
+			+e('p').__p Можете объяснить, как получить этот объект из api.min.js
+			+e('p').__p P.S. Строки добавляются, слайдер работает, в пиксель попал. Пойду ReactJS учить, т.к. слышал что профессия верстальщик умерла ( 
+
